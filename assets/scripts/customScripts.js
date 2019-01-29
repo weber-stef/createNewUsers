@@ -32,6 +32,9 @@ class registeredUser {
         this.registerDate
       }`
     );
+    document.getElementById("enterScriptman").textContent += `User ${
+      this._name
+    } has password "${this.password}" and registered at ${this.registerDate} `;
   }
 }
 let user = new registeredUser("Leo", "oldSecret");
